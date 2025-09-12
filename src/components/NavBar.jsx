@@ -1,7 +1,7 @@
 const NavBar = () => {
     return ( 
         <>
-            <header className="totc-header">
+            <header className="totc-header ">
       <nav className="totc-nav">
         <div className="flex items-center space-x-2">
           <div >

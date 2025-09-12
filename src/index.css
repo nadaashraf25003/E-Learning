@@ -137,10 +137,7 @@
     @apply text-white hover:text-white/80 transition-colors ;
   }
 
-  .totc-auth-buttons {
-    @apply flex items-center space-x-3;
-  }
-
+ 
   .uplearn-signup-btn {
     @apply text-white bg-white/40 hover:bg-white/60 hover:text-black px-10 py-3 rounded-full font-medium transition shadow-md w-[150px]  text-center text-lg;
   }
@@ -153,9 +150,6 @@
     @apply relative min-h-screen bg-[#49BBBD] overflow-hidden;
   }
 
-  .totc-hero-curve {
-    @apply absolute bottom-0 left-0 right-0 h-32 bg-white rounded-t-[100px];
-  }
 
   .totc-hero-container {
     @apply relative z-10 max-w-7xl mx-auto px-6 py-20;
