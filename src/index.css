@@ -1,68 +1,201 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Updated color scheme to match TOTC teal design */
+  --background: #49BBBD; /* [#49BBBD] */
+  --foreground: oklch(1 0 0); /* white */
+  --card: oklch(0.98 0.02 180); /* light teal */
+  --card-foreground: oklch(0.25 0 0); /* charcoal */
+  --popover: oklch(1 0 0); /* white */
+  --popover-foreground: oklch(0.25 0 0); /* charcoal */
+  --primary: #49BBBD; /* cyan-500 */
+  --primary-foreground: oklch(1 0 0); /* white */
+  --secondary: oklch(0.98 0.02 180); /* light teal */
+  --secondary-foreground: oklch(0.25 0 0); /* charcoal */
+  --muted: oklch(0.9 0.02 0); /* gray-200 */
+  --muted-foreground: oklch(0.25 0 0); /* charcoal */
+  --accent: #49BBBD; /* cyan-500 */
+  --accent-foreground: oklch(1 0 0); /* white */
+  --destructive: oklch(0.6 0.25 25); /* red-600 */
+  --destructive-foreground: oklch(1 0 0); /* white */
+  --border: oklch(0.85 0.02 0); /* gray-300 */
+  --input: oklch(1 0 0); /* white */
+  --ring: #49BBBD; /* semi-transparent cyan */
+  --chart-1: #49BBBD; /* cyan-500 */
+  --chart-2: #49BBBD; /* [#49BBBD] */
+  --chart-3: oklch(0.98 0.02 180); /* light teal */
+  --chart-4: oklch(0.25 0 0); /* charcoal */
+  --chart-5: oklch(1 0 0); /* white */
+  --radius: 0.5rem;
+  --sidebar: oklch(1 0 0); /* white */
+  --sidebar-foreground: oklch(0.25 0 0); /* charcoal */
+  --sidebar-primary: #49BBBD; /* cyan-500 */
+  --sidebar-primary-foreground: oklch(1 0 0); /* white */
+  --sidebar-accent: #49BBBD; /* [#49BBBD] */
+  --sidebar-accent-foreground: oklch(1 0 0); /* white */
+  --sidebar-border: oklch(0.85 0.02 0); /* gray-300 */
+  --sidebar-ring: #49BBBD; /* semi-transparent cyan */
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* Added custom animations for floating cards */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
   }
-  a:hover {
-    color: #747bff;
+  50% {
+    transform: translateY(-10px);
   }
-  button {
-    background-color: #f9f9f9;
+}
+
+@keyframes float-delayed {
+  0%,
+  100% {
+    transform: translateY(0px);
   }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 3s ease-in-out infinite 1.5s;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* TOTC Custom Classes */
+ .totc-header {
+  @apply w-full py-4  ;
+}
+
+  .totc-nav {
+    @apply flex items-center justify-between max-w-7xl mx-6;
+  }
+
+  .uplearn-text {
+    @apply text-white font-bold text-2xl ;
+  }
+
+  .totc-nav-links {
+    @apply hidden md:flex items-center space-x-14 mr-30 text-lg;
+  }
+
+  .totc-nav-link {  
+    @apply text-white hover:text-white/80 transition-colors ;
+  }
+
+  .totc-auth-buttons {
+    @apply flex items-center space-x-3;
+  }
+
+  .uplearn-signup-btn {
+    @apply text-white bg-white/40 hover:bg-white/60 hover:text-black px-10 py-3 rounded-full font-medium transition shadow-md w-[150px]  text-center text-lg;
+  }
+
+  .uplearn-signin-btn {
+    @apply bg-white text-black hover:bg-white/90  px-12 py-3 rounded-full font-medium transition shadow-md text-lg;
+  }
+
+  .totc-hero-section {
+    @apply relative min-h-screen bg-[#49BBBD] overflow-hidden;
+  }
+
+  .totc-hero-curve {
+    @apply absolute bottom-0 left-0 right-0 h-32 bg-white rounded-t-[100px];
+  }
+
+  .totc-hero-container {
+    @apply relative z-10 max-w-7xl mx-auto px-6 py-20;
+  }
+
+  .totc-hero-grid {
+    @apply grid lg:grid-cols-2 gap-12 items-center;
+  }
+
+  .totc-hero-content {
+    @apply space-y-8;
+  }
+
+  .totc-hero-title {
+    @apply text-5xl lg:text-6xl font-bold text-white leading-tight;
+  }
+
+  .totc-hero-highlight {
+    @apply text-orange-300;
+  }
+
+  .totc-hero-subtitle {
+    @apply text-xl text-white/90 leading-relaxed max-w-lg;
+  }
+
+  .totc-hero-buttons {
+    @apply flex items-center space-x-6;
+  }
+
+  .totc-join-btn {
+    @apply bg-white/30 text-white hover:bg-white/40 px-8 py-4 text-lg font-semibold rounded-full;
+  }
+
+  .totc-watch-btn {
+    @apply text-white hover:bg-white/10 flex items-center space-x-3;
+  }
+
+  .totc-play-icon {
+    @apply w-15 h-15 bg-white rounded-full flex items-center justify-center;
+  }
+
+
 }
