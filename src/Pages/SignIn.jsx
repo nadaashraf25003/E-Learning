@@ -1,13 +1,7 @@
 function SignIn() {
     return (
         <>
-            <h1>SignIn</h1>
-            <h1>SignIn</h1>
-            <h1>SignIn</h1>
-            <h1>SignIn</h1>
-            <h1>SignIn</h1>
-            <h1>SignIn</h1>
-            <h1>SignIn</h1>
+     
         </>
     )
 }
