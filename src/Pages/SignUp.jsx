@@ -75,7 +75,7 @@ function SignUp() {
         <div className="left">
           <div className="SignIn  flex flex-col justify-center max-lg:p-10  p-16 rounded-lg text-center">
             <p className="pb-10 text-3xl font-bold text-black">Welcome to our Learning Website</p>
-            <div className="bg-[#49BBBD99] p-3 rounded-[150px] mb-8 w-80 flex justify-center gap-8 mx-auto max-lg:gap-2 max-sm:flex-col max-sm:rounded-[10px]">
+            <div className="bg-[#49BBBD99] p-3 rounded-[150px] mb-8 w-80 flex justify-center gap-8 mx-auto max-lg:gap-2">
               <button type="button" onClick={() => navigate("/Login")} className=" py-2 px-10 rounded-[150px] font-bold text-white 
                hover:scale-105 transition-all duration-300 cursor-pointer">
                 Login

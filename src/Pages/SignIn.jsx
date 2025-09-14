@@ -37,7 +37,7 @@ function SignIn() {
             <p className="pb-10 text-3xl font-bold text-black">
               Welcome to our Learning Website
             </p>
-            <div className="bg-[#49BBBD99] p-3 rounded-[150px] mb-8 w-80 flex justify-center gap-8 mx-auto max-lg:gap-2 max-sm:flex-col max-sm:rounded-[10px]">
+            <div className="bg-[#49BBBD99] p-3 rounded-[150px] mb-8 w-80 flex justify-center gap-8 mx-auto max-lg:gap-2">
               <button
                 type="button"
                 onClick={() => navigate("/Login")}
