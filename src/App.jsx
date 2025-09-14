@@ -1,10 +1,9 @@
-import Home from './Home.jsx'
+// React 
+import { Outlet } from 'react-router-dom'
 function App() {
   
   return (
-    
-      <Home/>
-   
+    <Outlet/>    
   )
 }
 

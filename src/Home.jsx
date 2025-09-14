@@ -1,9 +1,13 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import NavBar from "./components/NavBar";
-import HomeImg from "./assets/Home.png";
+// React
+import { useNavigate } from "react-router-dom";
 
+// Components
+import NavBar from "./components/NavBar";
+
+// Assets
+import HomeImg from "./assets/Home.png";
 const Home = () => {
+    const navigate = useNavigate();
   return (
     <>
       <main className="h-[700px] bg-[#49BBBD] overflow-hidden ml-10 ">
@@ -11,12 +15,9 @@ const Home = () => {
           <NavBar />
 
           <div className="flex items-center gap-7 mr-16">
-            <button className="uplearn-signin-btn">
-              Login
-            </button>
-            <button className="uplearn-signup-btn">
-              Sign Up
-            </button>
+            <button className="uplearn-signin-btn" onClick={()=>navigate("/Login")}>Login</button>
+
+            <button className="uplearn-signup-btn" onClick={()=>navigate("/Register")}>Sign Up</button>
           </div>
         </div>
 
@@ -33,9 +34,7 @@ const Home = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row items-center gap-6">
-                <button className="totc-join-btn">
-                  Join for free
-                </button>
+                <button className="totc-join-btn">Join for free</button>
                 <button className="flex items-center gap-3 text-white group">
                   <div className="totc-play-icon">
                     <svg
@@ -80,7 +79,6 @@ const Home = () => {
         </div>
 
         <div className="w-full h-24 bg-white rounded-t-[100%] absolute bottom-0 left-0"></div>
-        
       </main>
     </>
   );
