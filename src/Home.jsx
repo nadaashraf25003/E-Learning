@@ -6,42 +6,44 @@ import NavBar from "./components/NavBar";
 
 // Assets
 import HomeImg from "./assets/Home.png";
+import Home1 from "../homePages/home1";
+import Home2 from "../homePages/home2";
 const Home = () => {
     const navigate = useNavigate();
   return (
     <>
-      <main className="h-[700px] bg-[#49BBBD] overflow-hidden ml-10 ">
-        <div className="flex items-center justify-between px-8 py-4">
+      <main className="min-h-screen bg-[#49BBBD] overflow-hidden px-4 sm:px-8 lg:px-16 ">
+        <div className="flex flex-col md:flex-row items-center justify-between py-4">
           <NavBar />
 
-          <div className="flex items-center gap-7 mr-16">
-            <button className="uplearn-signin-btn" onClick={()=>navigate("/Login")}>Login</button>
+          <div className="grid lg:grid-cols-2  md:grid-cols-1 sm:grid-cols-1  items-center lg:mr-10 gap-15">
+            <button className="uplearn-signin-btn hover:scale-105 transition-transform duration-300 cursor-pointer" onClick={()=>navigate("/Login")}>Login</button>
 
-            <button className="uplearn-signup-btn" onClick={()=>navigate("/Register")}>Sign Up</button>
+            <button className="uplearn-signup-btn hover:scale-105 transition-transform duration-300 cursor-pointer" onClick={()=>navigate("/Register")}>Sign Up</button>
           </div>
         </div>
 
-        <div className="container mx-auto px-4 pt-10 pb-34">
-          <div className="flex flex-col lg:flex-row items-center justify-between">
-            <div className="lg:w-1/2 text-white mb-15 lg:mb-0 ml-6 lg:pr-10 ">
-              <h1 className="text-4xl md:text-5xl lg:text-4xl font-bold mb-6  leading-tight ">
+        <div className="container mx-auto  pt-10 ">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
+            <div className="lg:w-1/2 text-white space-y-6 text-center lg:text-left lg:ml-10">
+              <h1 className="text-3xl md:text-5xl font-bold leading-tight opacity-0 animate-fade-in-delay-1 ">
                 <span className="text-[#F48C06] "> Studying</span> Online is now
                 <br></br> much easier
               </h1>
-              <p className="text-xl mb-8 opacity-90">
+              <p className="text-xl mb-8 opacity-90 opacity-0 animate-fade-in-delay-1">
                 UpLearn is an interesting platform that will teach you in more
                 an interactive way.
               </p>
 
-              <div className="flex flex-col sm:flex-row items-center gap-6">
-                <button className="totc-join-btn">Join for free</button>
-                <button className="flex items-center gap-3 text-white group">
+              <div className="flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start">
+                <button className="totc-join-btn hover:scale-105 transition-transform duration-300 cursor-pointer ">Join for free</button>
+                <button className="flex items-center gap-3 text-white group hover:scale-105 transition-transform duration-300 cursor-pointer ">
                   <div className="totc-play-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
-                      className="w-6 h-6 text-[#23BDEE] ml-1"
+                      className="w-6 h-6 text-[#23BDEE] ml-1 "
                     >
                       <path
                         fillRule="evenodd"
@@ -50,7 +52,7 @@ const Home = () => {
                       />
                     </svg>
                   </div>
-                  <span className="text-lg font-medium text-[#252641] group-hover:underline">
+                  <span className="text-lg font-medium text-[#252641] group-hover:underline ">
                     Watch how it works
                   </span>
                 </button>
@@ -77,9 +79,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-        <div className="w-full h-24 bg-white rounded-t-[100%] absolute bottom-0 left-0"></div>
       </main>
+      <Home1/>
+      <Home2/>
     </>
   );
 };

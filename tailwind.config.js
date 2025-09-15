@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#49BBBD",
+        
       },
       keyframes: {
         float: {
