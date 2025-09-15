@@ -4,38 +4,7 @@
 :root {
   /* Updated color scheme to match TOTC teal design */
   --background: #49BBBD; /* [#49BBBD] */
-  --foreground: oklch(1 0 0); /* white */
-  --card: oklch(0.98 0.02 180); /* light teal */
-  --card-foreground: oklch(0.25 0 0); /* charcoal */
-  --popover: oklch(1 0 0); /* white */
-  --popover-foreground: oklch(0.25 0 0); /* charcoal */
-  --primary: #49BBBD; /* cyan-500 */
-  --primary-foreground: oklch(1 0 0); /* white */
-  --secondary: oklch(0.98 0.02 180); /* light teal */
-  --secondary-foreground: oklch(0.25 0 0); /* charcoal */
-  --muted: oklch(0.9 0.02 0); /* gray-200 */
-  --muted-foreground: oklch(0.25 0 0); /* charcoal */
-  --accent: #49BBBD; /* cyan-500 */
-  --accent-foreground: oklch(1 0 0); /* white */
-  --destructive: oklch(0.6 0.25 25); /* red-600 */
-  --destructive-foreground: oklch(1 0 0); /* white */
-  --border: oklch(0.85 0.02 0); /* gray-300 */
-  --input: oklch(1 0 0); /* white */
-  --ring: #49BBBD; /* semi-transparent cyan */
-  --chart-1: #49BBBD; /* cyan-500 */
-  --chart-2: #49BBBD; /* [#49BBBD] */
-  --chart-3: oklch(0.98 0.02 180); /* light teal */
-  --chart-4: oklch(0.25 0 0); /* charcoal */
-  --chart-5: oklch(1 0 0); /* white */
-  --radius: 0.5rem;
-  --sidebar: oklch(1 0 0); /* white */
-  --sidebar-foreground: oklch(0.25 0 0); /* charcoal */
-  --sidebar-primary: #49BBBD; /* cyan-500 */
-  --sidebar-primary-foreground: oklch(1 0 0); /* white */
-  --sidebar-accent: #49BBBD; /* [#49BBBD] */
-  --sidebar-accent-foreground: oklch(1 0 0); /* white */
-  --sidebar-border: oklch(0.85 0.02 0); /* gray-300 */
-  --sidebar-ring: #49BBBD; /* semi-transparent cyan */
+   /* semi-transparent cyan */
 }
 
 /* Added custom animations for floating cards */
@@ -106,6 +75,14 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
+  --animate-fade-in: fade-in 0.7s ease-out forwards;
+  --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.2s forwards;
+  --animate-fade-in-delay-2: fade-in 0.7s ease-out 0.4s forwards;
+  --animate-fade-in-delay-3: fade-in 0.7s ease-out 0.6s forwards;
+  --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.8s forwards;
 }
 
 @layer base {
@@ -115,7 +92,34 @@
   body {
     @apply bg-background text-foreground;
   }
-
+@keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  @keyframes pulse-subtle {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);  
+    }
+  }
   /* TOTC Custom Classes */
  .totc-header {
   @apply w-full py-4  ;
@@ -130,7 +134,7 @@
   }
 
   .totc-nav-links {
-    @apply hidden md:flex items-center space-x-14 mr-30 text-lg;
+    @apply hidden md:flex items-center space-x-14 mr-30 lg:text-lg;
   }
 
   .totc-nav-link {  
@@ -139,11 +143,11 @@
 
  
   .uplearn-signup-btn {
-    @apply text-white bg-white/40 hover:bg-white/60 hover:text-black px-10 py-3 rounded-full font-medium transition shadow-md w-[150px]  text-center text-lg;
+    @apply text-white bg-white/40 hover:bg-white/60 hover:text-black px-10 py-3 rounded-full font-medium transition shadow-md lg:w-[150px]  text-center lg:text-lg md:text-xl;
   }
 
   .uplearn-signin-btn {
-    @apply bg-white text-black hover:bg-white/90  px-12 py-3 rounded-full font-medium transition shadow-md text-lg;
+    @apply bg-white text-black hover:bg-white/90  px-12 py-3 rounded-full font-medium transition shadow-md lg:text-lg text-center lg:w-[150px] md:text-xl;
   }
 
   .totc-hero-section {
@@ -180,7 +184,7 @@
   }
 
   .totc-join-btn {
-    @apply bg-white/30 text-white hover:bg-white/40 px-8 py-4 text-lg font-semibold rounded-full;
+    @apply bg-white/30 text-white hover:bg-white/40 px-8 py-4 lg:text-lg font-semibold rounded-full;
   }
 
   .totc-watch-btn {

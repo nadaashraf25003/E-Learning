@@ -28,7 +28,7 @@ function SignIn() {
   };
   return (
     <>
-      <div className="grid grid-cols-2  mx-[10%] bg-white  max-md:grid-cols-1  justify-center items-center h-screen">
+      <div className="grid grid-cols-2  mx-[10%] bg-white  max-md:grid-cols-1  justify-center items-center h-screen shadow-2xl">
         <div className="right max-md:hidden ">
           <img src={login} alt="logo" className="rounded-lg" />
         </div>
