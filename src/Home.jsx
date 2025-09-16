@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar";
 import HomeImg from "./assets/Home.png";
 import Home1 from "../homePages/home1";
 import Home2 from "../homePages/home2";
+import Home3 from "../homePages/home3";
 const Home = () => {
     const navigate = useNavigate();
   return (
@@ -82,6 +83,7 @@ const Home = () => {
       </main>
       <Home1/>
       <Home2/>
+      <Home3/>
     </>
   );
 };
