@@ -11,6 +11,7 @@ import App from "./App.jsx";
 import Home from "./Home.jsx";
 import SignIn from "./Pages/SignIn.jsx";
 import SignUp from "./Pages/SignUp.jsx";
+import Courses from "./Pages/Courses.jsx";
 
 let router = createBrowserRouter(
   [
@@ -29,6 +30,10 @@ let router = createBrowserRouter(
         {
           path: "Login",
           Component: SignIn,
+        },
+        {
+          path: "Courses",
+          Component: Courses,
         },
       ],
     },

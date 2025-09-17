@@ -1,35 +1,54 @@
+import { Link, useNavigate } from "react-router-dom";
+import Logo2 from "../assets/UpLearn2.png";
 const NavBar = () => {
-    return ( 
-        <>
-            <header className="totc-header ">
-      <nav className="totc-nav">
-        <div className="flex items-center space-x-2">
-          <div >
-            <span className="uplearn-text">UpLearn</span>
+  const navigate = useNavigate();
+  return (
+    <>
+      <header className="totc-header ">
+        <nav className="totc-nav">
+          <div className="flex items-center space-x-2">
+            <div>
+              <img src={Logo2} alt="" width={70} />
+              {/* <span className="uplearn-text">UpLearn</span> */}
+            </div>
           </div>
-        </div>
 
-        <div className="totc-nav-links">
-          <a href="#" className="totc-nav-link">
-            Home
-          </a>
-          <a href="#" className="totc-nav-link">
-            Courses
-          </a>
-          <a href="#" className="totc-nav-link">
-            Careers
-          </a>
-          <a href="#" className="totc-nav-link">
-            Blog
-          </a>
-          <a href="#" className="totc-nav-link">
-            About Us
-          </a>
-        </div>
-      </nav>
-    </header>
-        </>
-     );
-}
- 
+          <div className="totc-nav-links">
+            <button
+              onClick={() => navigate("/")}
+              className="totc-nav-link cursor-pointer" 
+            >
+              Home
+            </button>
+            <button
+              onClick={() => navigate("/Courses")}
+              className="totc-nav-link cursor-pointer"
+            >
+              Courses
+            </button>
+            <button
+              onClick={() => navigate("/Courses")}
+              className="totc-nav-link cursor-pointer"
+            >
+              Careers
+            </button>
+            <button
+              onClick={() => navigate("/Courses")}
+              className="totc-nav-link cursor-pointer"
+            >
+              Blog
+            </button>
+            <button
+              onClick={() => navigate("/Courses")}
+              className="totc-nav-link cursor-pointer"
+            >
+              About Us
+            </button>
+          </div>
+        </nav>
+      </header>
+    </>
+  );
+};
+
 export default NavBar;
