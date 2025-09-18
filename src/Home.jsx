@@ -21,7 +21,7 @@ const Home = () => {
                 <span className="text-[#F48C06] "> Studying</span> Online is now
                 <br></br> much easier
               </h1>
-              <p className="text-xl mb-8 opacity-90 opacity-0 animate-fade-in-delay-1">
+              <p className="text-xl mb-8 opacity-90  animate-fade-in-delay-1">
                 UpLearn is an interesting platform that will teach you in more
                 an interactive way.
               </p>
