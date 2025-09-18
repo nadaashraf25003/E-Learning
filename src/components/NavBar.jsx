@@ -16,7 +16,7 @@ const NavBar = () => {
           <div className="totc-nav-links">
             <button
               onClick={() => navigate("/")}
-              className="totc-nav-link cursor-pointer" 
+              className="totc-nav-link cursor-pointer"
             >
               Home
             </button>
@@ -43,6 +43,21 @@ const NavBar = () => {
               className="totc-nav-link cursor-pointer"
             >
               About Us
+            </button>
+          </div>
+          <div className="grid lg:grid-cols-2  md:grid-cols-1 sm:grid-cols-1  items-center lg:mr-10 gap-15">
+            <button
+              className="uplearn-signin-btn hover:scale-105 transition-transform duration-300 cursor-pointer"
+              onClick={() => navigate("/Login")}
+            >
+              Login
+            </button>
+
+            <button
+              className="uplearn-signup-btn hover:scale-105 transition-transform duration-300 cursor-pointer"
+              onClick={() => navigate("/Register")}
+            >
+              Sign Up
             </button>
           </div>
         </nav>

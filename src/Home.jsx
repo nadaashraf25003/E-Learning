@@ -1,6 +1,3 @@
-// React
-import { useNavigate } from "react-router-dom";
-
 // Components
 import NavBar from "./components/NavBar";
 
@@ -10,19 +7,12 @@ import Home1 from "../homePages/home1";
 import Home2 from "../homePages/home2";
 import Home3 from "../homePages/home3";
 const Home = () => {
-    const navigate = useNavigate();
   return (
     <>
       <main className="min-h-screen bg-[#49BBBD] overflow-hidden px-4 sm:px-8 lg:px-16 ">
-        <div className="flex flex-col md:flex-row items-center justify-between py-4">
+        {/* <div className="flex flex-col md:flex-row items-center justify-between py-4"> */}
           <NavBar />
-
-          <div className="grid lg:grid-cols-2  md:grid-cols-1 sm:grid-cols-1  items-center lg:mr-10 gap-15">
-            <button className="uplearn-signin-btn hover:scale-105 transition-transform duration-300 cursor-pointer" onClick={()=>navigate("/Login")}>Login</button>
-
-            <button className="uplearn-signup-btn hover:scale-105 transition-transform duration-300 cursor-pointer" onClick={()=>navigate("/Register")}>Sign Up</button>
-          </div>
-        </div>
+        {/* </div> */}
 
         <div className="container mx-auto  pt-10 ">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
@@ -37,7 +27,9 @@ const Home = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start">
-                <button className="totc-join-btn hover:scale-105 transition-transform duration-300 cursor-pointer ">Join for free</button>
+                <button className="totc-join-btn hover:scale-105 transition-transform duration-300 cursor-pointer ">
+                  Join for free
+                </button>
                 <button className="flex items-center gap-3 text-white group hover:scale-105 transition-transform duration-300 cursor-pointer ">
                   <div className="totc-play-icon">
                     <svg
@@ -81,9 +73,9 @@ const Home = () => {
           </div>
         </div>
       </main>
-      <Home1/>
-      <Home2/>
-      <Home3/>
+      <Home1 />
+      <Home2 />
+      <Home3 />
     </>
   );
 };
