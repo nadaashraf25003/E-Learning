@@ -1,9 +1,14 @@
-import NavBar from "./../components/NavBar";
+// React
+
+// Components
 import Card from "./../components/Card";
+import NavBar from "./../components/NavBar";
+import Footer from "../components/Footer";
+
+// db
 import { Coursers } from "../../db";
 import { nextlesson } from "../../db";
 import { category } from "../../db";
-import Footer from "../components/Footer";
 function Courses() {
   return (
     <>

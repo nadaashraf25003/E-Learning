@@ -7,7 +7,9 @@ import Home1 from "../homePages/home1";
 import Home2 from "../homePages/home2";
 import Home3 from "../homePages/home3";
 import Footer from "./components/Footer";
+import { useNavigate } from "react-router-dom";
 const Home = () => {
+  const navigte = useNavigate();
   return (
     <>
       <main className="min-h-screen bg-[#49BBBD] overflow-hidden px-4 sm:px-8 lg:px-16 ">
@@ -28,7 +30,8 @@ const Home = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start">
-                <button className="totc-join-btn hover:scale-105 transition-transform duration-300 cursor-pointer ">
+                <button className="totc-join-btn hover:scale-105 transition-transform duration-300 cursor-pointer " 
+                onClick={() => navigte("/Login")}>
                   Join for free
                 </button>
                 <button className="flex items-center gap-3 text-white group hover:scale-105 transition-transform duration-300 cursor-pointer ">

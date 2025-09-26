@@ -1,6 +1,7 @@
 export const Coursers = [
   {
     id: 1,
+    courseDetainID: 1,
     name: "AWS Certified Solutions Architect",
     courseImg: "../../public/home2-2.png",
     description:
@@ -14,6 +15,7 @@ export const Coursers = [
   },
   {
     id: 2,
+    courseDetainID: 2,
     name: "AWS Certified Solutions Architect",
     courseImg: "../../public/home2-2.png",
     description:
@@ -27,6 +29,7 @@ export const Coursers = [
   },
   {
     id: 3,
+    courseDetainID: 3,
     name: "AWS Certified Solutions Architect",
     courseImg: "../../public/home2-2.png",
     description:
@@ -40,6 +43,7 @@ export const Coursers = [
   },
   {
     id: 4,
+    courseDetainID: 4,
     name: "AWS Certified Solutions Architect",
     courseImg: "../../public/home2-2.png",
     description:
@@ -53,9 +57,101 @@ export const Coursers = [
   },
 ];
 
+export const creators = [
+  {
+    id: 1,
+    name: "Jane Cooper",
+    courseImg: "../../public/home3-1.png",
+    description:
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam hic,",
+  },
+  {
+    id: 2,
+    name: "Jane Cooper",
+    courseImg: "../../public/home3-2.png",
+    description:
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam hic,",
+  },
+  {
+    id: 3,
+    name: "Jane Cooper",
+    courseImg: "../../public/home3-3.png",
+    description:
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam hic,",
+  },
+  {
+    id: 4,
+    name: "Jane Cooper",
+    courseImg: "../../public/home3-4.png",
+    description:
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam hic,",
+  },
+  {
+    id: 5,
+    name: "Jane Cooper",
+    courseImg: "../../public/home3-5.png",
+    description:
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam hic,",
+  },
+  {
+    id: 6,
+    name: "Jane Cooper",
+    courseImg: "../../public/home3-1.png",
+    description:
+      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam hic,",
+  },
+
+];
+
+export const literaturecourse = [
+  {
+    id: 1,
+    courseDetainID: 2,
+    courseImg: "../../public/Literaturecourse_1.jpg",
+    description: " All Benefits of PLUS",
+    newPrice: "$80",
+  },
+  {
+    id: 2,
+    courseDetainID: 2,
+    courseImg: "../../public/Literaturecourse_2.png",
+    description: " All Benefits of PLUS",
+    newPrice: "$80",
+  },
+  {
+    id: 3,
+    courseDetainID: 2,
+    courseImg: "../../public/Literaturecourse_3.jpg",
+    description: " All Benefits of PLUS",
+    newPrice: "$80",
+  },
+  {
+    id: 4,
+    courseDetainID: 2,
+    courseImg: "../../public/Literaturecourse_4.jpg",
+    description: " All Benefits of PLUS",
+    newPrice: "$80",
+  },
+  {
+    id: 5,
+    courseDetainID: 2,
+    courseImg: "../../public/Literaturecourse_5.jpg",
+    description: " All Benefits of PLUS",
+    newPrice: "$80",
+  },
+  {
+    id: 6,
+    courseDetainID: 2,
+    courseImg: "../../public/Literaturecourse_1.jpg",
+    description: " All Benefits of PLUS",
+    newPrice: "$80",
+  },
+];
+
 export const nextlesson = [
   {
     id: 1,
+    courseDetainID: 2,
     name: "AWS Certified Solutions Architect",
     courseImg: "../../public/home2-2.png",
     instructor: "Lina2",
@@ -66,6 +162,7 @@ export const nextlesson = [
   },
   {
     id: 2,
+    courseDetainID: 2,
     name: "AWS Certified Solutions Architect",
     courseImg: "../../public/home2-2.png",
     instructor: "Lina2",
@@ -76,6 +173,7 @@ export const nextlesson = [
   },
   {
     id: 3,
+    courseDetainID: 2,
     name: "AWS Certified Solutions Architect",
     courseImg: "../../public/home2-2.png",
     instructor: "Lina2",
@@ -86,6 +184,7 @@ export const nextlesson = [
   },
   {
     id: 4,
+    courseDetainID: 2,
     name: "AWS Certified Solutions Architect",
     courseImg: "../../public/home2-2.png",
     instructor: "Lina2",

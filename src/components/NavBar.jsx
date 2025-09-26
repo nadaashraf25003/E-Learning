@@ -1,7 +1,9 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Logo2 from "../assets/UpLearn2.png";
 const NavBar = () => {
   const navigate = useNavigate();
+  const location = useLocation().pathname;
+  console.log(location);
   return (
     <>
       <header className="totc-header ">
@@ -38,12 +40,21 @@ const NavBar = () => {
             >
               Blog
             </button>
-            <button
-              onClick={() => navigate("/Courses")}
-              className="totc-nav-link cursor-pointer"
-            >
-              About Us
-            </button>
+            {location === "/Courses" ? (
+              <button
+                onClick={() => navigate("/Search")}
+                className="totc-nav-link cursor-pointer"
+              >
+                Search
+              </button>
+            ) : (
+              <button
+                onClick={() => navigate("/Courses")}
+                className="totc-nav-link cursor-pointer"
+              >
+                About Us
+              </button>
+            )}
           </div>
           <div className="grid lg:grid-cols-2  md:grid-cols-1 sm:grid-cols-1  items-center lg:mr-10 gap-15">
             <button
