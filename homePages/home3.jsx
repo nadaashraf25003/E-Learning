@@ -2,8 +2,8 @@ import { LayoutGrid, StickyNote, Users } from "lucide-react";
 
 const Home3 = () => {
   return (
-    <section className="relative min-h-[600px] bg-white px-4 sm:px-6 lg:px-20 py-12 md:py-16 overflow-hidden">
-      {/* العنوان */}
+    <section className="relative min-h-[750px] bg-white px-4 sm:px-6 lg:px-20 py-12 md:py-16 overflow-hidden">
+      
       <div className="text-center mt-8 flex flex-col sm:flex-row justify-center items-center gap-2">
         <h2 className="text-[#2F327D] text-2xl sm:text-3xl md:text-4xl font-bold">
           Our
@@ -18,7 +18,7 @@ const Home3 = () => {
         efficient
       </p>
 
-      {/* الدواير - هتظهر بس من md */}
+     
       <div className="hidden md:block absolute top-[240px] left-8 w-16 h-16 bg-[#33EFA0] rounded-full" />
       <div className="hidden md:block absolute top-[260px] left-1/5 w-5 h-5 bg-[#33D9EF] rounded-full" />
       <div className="hidden md:block absolute top-[650px] left-1/3 w-5 h-5 bg-[#F56666] rounded-full" />

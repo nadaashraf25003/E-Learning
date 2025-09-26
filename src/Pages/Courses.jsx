@@ -3,6 +3,7 @@ import Card from "./../components/Card";
 import { Coursers } from "../../db";
 import { nextlesson } from "../../db";
 import { category } from "../../db";
+import Footer from "../components/Footer";
 function Courses() {
   return (
     <>
@@ -164,8 +165,11 @@ function Courses() {
           ))}
         </div>
       </div>
+      <Footer />
     </>
+
   );
 }
+
 
 export default Courses;
