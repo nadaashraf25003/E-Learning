@@ -13,10 +13,6 @@ import Home from "./Home.jsx";
 import SignIn from "./Pages/SignIn.jsx";
 import SignUp from "./Pages/SignUp.jsx";
 import Courses from "./Pages/Courses.jsx";
-import Search from "./Pages/Search.jsx";
-import LiteratureCourse from "./Pages/Literature course.jsx";
-import Meeting from "./Pages/Meeting.jsx";
-import CourseDetail from "./Pages/CourseDetail.jsx";
 
 let router = createBrowserRouter(
   [
@@ -39,22 +35,6 @@ let router = createBrowserRouter(
         {
           path: "Courses",
           Component: Courses,
-        },
-        {
-          path: "CourseDetail/:id",
-          Component: CourseDetail,
-        },
-        {
-          path: "Search",
-          Component: Search,
-        },
-        {
-          path: "LiteratureCourse",
-          Component: LiteratureCourse,
-        },
-        {
-          path: "Meeting",
-          Component: Meeting ,
         },
       ],
     },

@@ -35,7 +35,7 @@ const NavBar = () => {
               Careers
             </button>
             <button
-              onClick={() => navigate("/Courses")}
+              onClick={() => navigate("/Blog")}
               className="totc-nav-link cursor-pointer"
             >
               Blog
