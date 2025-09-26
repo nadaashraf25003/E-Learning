@@ -1,6 +1,9 @@
 // Assets
 import SearchImg from "./../assets/Search.jpg";
 import Student from "./../../public/home3-6.jpg";
+import Blog5 from "./../../public/blog5.png";
+import Blog2 from "./../../public/Blog2.png";
+import Blog3 from "./../../public/blog3.png";
 
 // Components
 import NavBar from "./../components/NavBar";
@@ -230,7 +233,7 @@ function Search() {
         <div className="flex flex-wrap justify-start gap-15 px-15 max-md:px-5">
           <div className="relative w-90 h-70 bg-black rounded-3xl max-md:w-full overflow-hidden">
             <div
-              style={{ backgroundImage: `url(${SearchImg})` }}
+              style={{ backgroundImage: `url(${Blog2})` }}
               className="w-90 h-70 bg-cover bg-center rounded-3xl opacity-70  top-0 left-0 max-md:w-full"
             ></div>
             <div className=" absolute top-5 left-5">
@@ -248,7 +251,7 @@ function Search() {
           </div>
           <div className="relative w-90 h-70 bg-black rounded-3xl max-md:w-full overflow-hidden">
             <div
-              style={{ backgroundImage: `url(${SearchImg})` }}
+              style={{ backgroundImage: `url(${Blog3})` }}
               className="w-90 h-70 bg-cover bg-center rounded-3xl  opacity-70  top-0 left-0 max-md:w-full"
             ></div>
             <div className=" absolute top-5 left-5">
@@ -266,7 +269,7 @@ function Search() {
           </div>
           <div className="relative w-90 h-70 bg-black rounded-3xl max-md:w-full overflow-hidden">
             <div
-              style={{ backgroundImage: `url(${SearchImg})` }}
+              style={{ backgroundImage: `url(${Blog5})` }}
               className="w-90 h-70 bg-cover bg-center rounded-3xl  opacity-70  top-0 left-0 max-md:w-full"
             ></div>
             <div className=" absolute top-5 left-5">
