@@ -2,6 +2,7 @@
 
 // Assets
 import home2_1 from "./../../public/home2-1.png";
+import CourseDetailImg from "./../assets/CourseDetail.jpg";
 
 // Components
 import Card from "./../components/Card";
@@ -10,14 +11,207 @@ import Footer from "../components/Footer";
 
 // db
 import { Coursers } from "../../db";
-import { nextlesson } from "../../db";
-import { category } from "../../db";
 
 function CourseDetail() {
   return (
     <>
       <div className="bg-[#49BBBD] overflow-hidden px-4 sm:px-8 max-lg:px-16">
         <NavBar />
+      </div>
+
+      <div className="relative h-[500px] flex items-center justify-center  overflow-hidden max-md:h-full">
+        <div
+          className="head h-full bg-cover bg-center absolute w-full"
+          style={{ backgroundImage: `url(${CourseDetailImg})` }}
+        ></div>
+      </div>
+
+      <div className="bg-[#f3f2f2]  py-5 px-36 max-lg:px-10 max-md:px-4">
+        <div className="categories mt-5 flex gap-4 max-lg:flex-wrap font-bold ">
+          <button className="bg-white px-10 py-2 rounded cursor-pointer hover:scale-105 transition-transform duration-300">
+            Overview
+          </button>
+          <button className="bg-white px-10 py-2 rounded cursor-pointer hover:scale-105 transition-transform duration-300">
+            Overview
+          </button>
+          <button className="bg-white px-10 py-2 rounded cursor-pointer hover:scale-105 transition-transform duration-300">
+            Overview
+          </button>
+          <button className="bg-[#49BBBD] px-10 py-2 rounded cursor-pointer hover:scale-105 transition-transform duration-300">
+            Overview
+          </button>
+        </div>
+
+        <div className="flex max-md:flex-col gap-10  mt-10">
+          <div className="course-detail bg-[#9DCCFF4D] rounded-lg shadow-lg p-10 mt-10 ">
+            <div className="first flex max-md:flex-col gap-10 mb-5">
+              <div className="left bg-white p-5 rounded text-center  shadow-lg mb-5">
+                <p className="font-bold text-3xl mb-5">4 out of 5</p>
+                <span className="text-lg mr-1">
+                  <i className="fa fa-star text-[#49BBBD]"></i>
+                </span>
+                <span className="text-lg mr-1">
+                  <i className="fa fa-star text-[#49BBBD]"></i>
+                </span>
+                <span className="text-lg mr-1">
+                  <i className="fa fa-star text-[#49BBBD]"></i>
+                </span>
+                <span className="text-lg mr-1">
+                  <i className="fa fa-star text-[#49BBBD]"></i>
+                </span>
+                <p className="font-bold mt-3">Top rating</p>
+              </div>
+              <div className="righ">
+                <p className="font-bold flex items-center justify-center gap-2 rounded text-center mb-3  ">
+                   Stars
+                  <progress
+                    className="w-50 rounded h-2 bg-white"
+                    value="80"
+                    max="100"
+                  ></progress>
+                </p>
+                 <p className="font-bold flex items-center justify-center gap-2 rounded text-center mb-3  ">
+                   Stars
+                  <progress
+                    className="w-50 rounded h-2 bg-white"
+                    value="80"
+                    max="100"
+                  ></progress>
+                </p>
+                 <p className="font-bold flex items-center justify-center gap-2 rounded text-center mb-3  ">
+                   Stars
+                  <progress
+                    className="w-50 rounded h-2 bg-white"
+                    value="80"
+                    max="100"
+                  ></progress>
+                </p>
+                 <p className="font-bold flex items-center justify-center gap-2 rounded text-center mb-3  ">
+                   Stars
+                  <progress
+                    className="w-50 rounded h-2 bg-white"
+                    value="80"
+                    max="100"
+                  ></progress>
+                </p>
+                 <p className="font-bold flex items-center justify-center gap-2 rounded text-center mb-3  ">
+                   Stars
+                  <progress
+                    className="w-50 rounded h-2 bg-white"
+                    value="80"
+                    max="100"
+                  ></progress>
+                </p>
+              </div>
+            </div>
+            <div className="second">
+              <div className="instructor flex items-center gap-2">
+                <img
+                  src={CourseDetailImg}
+                  alt=""
+                  style={{ width: "40px", height: "40px" }}
+                  className="rounded-full"
+                />
+                <p className="instructor-name font-bold">
+                  Lina <br />
+                  <span>
+                    <i className="fa fa-star text-[#49BBBD]"></i>
+                  </span>
+                  <span>
+                    <i className="fa fa-star text-[#49BBBD]"></i>
+                  </span>
+                  <span>
+                    <i className="fa fa-star text-[#49BBBD]"></i>
+                  </span>
+                  <span>
+                    <i className="fa fa-star text-[#49BBBD]"></i>
+                  </span>
+                </p>
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Consequatur quam qui vero veniam eos numquam?
+              </p>
+            </div>
+            <hr className="my-5" />
+            <div className="second">
+              <div className="instructor flex items-center gap-2">
+                <img
+                  src={CourseDetailImg}
+                  alt=""
+                  style={{ width: "40px", height: "40px" }}
+                  className="rounded-full"
+                />
+                <p className="instructor-name font-bold">
+                  Lina <br />
+                  <span>
+                    <i className="fa fa-star text-[#49BBBD]"></i>
+                  </span>
+                  <span>
+                    <i className="fa fa-star text-[#49BBBD]"></i>
+                  </span>
+                  <span>
+                    <i className="fa fa-star text-[#49BBBD]"></i>
+                  </span>
+                  <span>
+                    <i className="fa fa-star text-[#49BBBD]"></i>
+                  </span>
+                </p>
+              </div>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Consequatur quam qui vero veniam eos numquam?
+              </p>
+            </div>
+          </div>
+          <div className="course-detail bg-[#9DCCFF4D] rounded-lg shadow-lg p-5 mt-10 w-150 max-md:w-full">
+            <div className="first text-center">
+              <img src={CourseDetailImg} alt="" />
+              <p>
+                <span className="font-bold text-3xl mr-5">$49.56</span> <span className="font-bold text-[#49BBBD] line-through">$99.99 50% off</span>
+              </p>
+              <p className="font-bold text-[#49BBBD] text-sm my-2">11 hour left at this price</p>
+              <button className="bg-[#49BBBD] text-white rounded font-bold px-5 py-2 mt-5 cursor-pointer">Buy Now</button>
+            </div>
+            <hr className="my-5"/>
+            <div className="second">
+              <p className="font-bold text-xl mb-3">This Course included</p>
+              <ul>
+                <li className="flex items-center mb-1">
+                  <div className="w-3 h-3 bg-[#49BBBD] rounded-full inline-block mr-2"></div>
+                  Money Back Guarantee
+                </li>
+                <li className="flex items-center mb-1">
+                  <div className="w-3 h-3 bg-[#49BBBD] rounded-full inline-block mr-2"></div>
+                  Access on all devices
+                </li>
+                <li className="flex items-center mb-1">
+                  <div className="w-3 h-3 bg-[#49BBBD] rounded-full inline-block mr-2"></div>
+                  Certification of completion
+                </li>
+                <li className="flex items-center mb-1">
+                  <div className="w-3 h-3 bg-[#49BBBD] rounded-full inline-block mr-2"></div>
+                  32 Moduls
+                </li>
+              </ul>
+            </div>
+            <hr className="my-5"/>
+            <div className="Third">
+              <p className="font-bold text-xl mb-3">Share this course</p>
+              <div className="flex items-center justify-start gap-2 text-lg">
+                <button className="bg-[#49BBBD] text-white px-3 py-2 rounded-full">
+                  <i className="fa-brands fa-instagram"></i>
+                </button>
+                <button className="bg-[#49BBBD] text-white px-3 py-2 rounded-full">
+                  <i className="fa-brands fa-youtube"></i>
+                </button>
+                <button className="bg-[#49BBBD] text-white px-3 py-2 rounded-full">
+                  <i className="fa-brands fa-facebook"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Marketing Articles */}
