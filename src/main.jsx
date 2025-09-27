@@ -17,6 +17,7 @@ import Search from "./Pages/Search.jsx";
 import LiteratureCourse from "./Pages/Literature course.jsx";
 import CourseDetail from "./Pages/CourseDetail.jsx";
 import Blog from './Pages/Blog';
+import BlogDetail from "./Pages/BlogDetail.jsx";
 
 let router = createBrowserRouter(
   [
@@ -55,6 +56,10 @@ let router = createBrowserRouter(
         {
           path: "LiteratureCourse",
           Component: LiteratureCourse,
+        },
+        {
+          path: "BlogDetail",
+          Component: BlogDetail,
         },
       ],
     },

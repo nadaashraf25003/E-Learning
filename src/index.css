@@ -232,8 +232,222 @@
   }
 }
 
-@layer utilities {
-  .hover {
-    @apply hover:scale-110 transform transition duration-300;
+.navbar-container-home {
+  background: linear-gradient(135deg, #49BBBD 0%, #49BBBD 100%);
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.navbar-title-home {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link-home {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link-home:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.nav-link-home.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+.nav-link-home.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background-color: white;
+}
+
+.login-btn-home {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.login-btn-home:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.signup-btn-home {
+  background-color: white;
+  color: #49BBBD;
+}
+
+.signup-btn-home:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-2px);
+}
+
+
+.navbar-container-other {
+  background-color: white;
+ 
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-title-other {
+  color: #49BBBD;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-link-other {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link-other:hover {
+  background-color: rgba(73, 187, 189, 0.1);
+  transform: translateY(-2px);
+}
+
+.nav-link-other.active {
+  background-color: rgba(73, 187, 189, 0.2);
+  color: #49BBBD;
+  font-weight: bold;
+}
+
+.nav-link-other.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background-color: #49BBBD;
+}
+
+.login-btn-other {
+  background-color: transparent;
+  color: #49BBBD;
+  border: 1px solid #49BBBD;
+}
+
+.login-btn-other:hover {
+  background-color: rgba(73, 187, 189, 0.1);
+  transform: translateY(-2px);
+}
+
+.signup-btn-other {
+  background-color: #49BBBD;
+  color: white;
+}
+
+.signup-btn-other:hover {
+  background-color: #3aa9ab;
+  transform: translateY(-2px);
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.navbar-logo {
+  width: 60px;
+  height: auto;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.login-btn-home, .signup-btn-home
+ {
+  padding: 0.6rem 1.2rem;
+  border-color: white;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  width: 120px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+.login-btn-other, .signup-btn-other{
+  padding: 0.6rem 1.2rem;
+  border-color: #49BBBD;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  width: 120px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+/* تصميم متجاوب للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
   }
+  
+  .navbar-links {
+    margin: 1rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navbar-actions {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.hover {
+  transition: transform 0.3s;
+}
+
+.hover:hover {
+  transform: scale(1.1);
 }

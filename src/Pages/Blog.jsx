@@ -1,12 +1,15 @@
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
+
 const Blog = () => {
   return (
+    
     <section className="min-h-screen bg-white">
-      <NavBar />
-
       
-      <div className="container mx-auto max-w-screen-xl flex flex-col lg:flex-row items-center justify-between px-6 lg:px-10 py-12 bg-[#9DCCFF]/30 rounded-md">
+      <NavBar />
+      
+      <div className="container mx-auto max-w-screen-xl flex flex-col lg:flex-row items-center justify-between px-6 lg:px-10 py-12 mt-12 bg-[#9DCCFF]/30 rounded-md">
         
         <div className="w-full lg:w-1/2 space-y-4 mb-8 lg:mb-0">
           <p className="text-black font-semibold text-lg md:text-xl">
@@ -83,8 +86,8 @@ const Blog = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16 ">
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:scale-105 transition">
               <img src="/home2-1.png" alt="Professional woman" className="w-full h-60 object-cover" />
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-800 mb-3">
@@ -97,7 +100,7 @@ const Blog = () => {
                   Clas, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...
                 </p>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#49BBBD] text-sm cursor-pointer hover:underline">Read more</span>
+                  <Link to="/BlogDetail" className="text-[#49BBBD] text-sm cursor-pointer hover:underline">Read more</Link>
                   <div className="flex items-center text-sm text-gray-500">
                     <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
@@ -113,7 +116,7 @@ const Blog = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden hover:scale-105 transition">
               <img src="/Blog2.png" alt="Laptop with video call" className="w-full h-60 object-cover" />
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-800 mb-3">
@@ -127,7 +130,7 @@ const Blog = () => {
                   Clas, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...
                 </p>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#49BBBD] text-sm cursor-pointer hover:underline">Read more</span>
+                  <Link to="/BlogDetail" className="text-[#49BBBD] text-sm cursor-pointer hover:underline">Read more</Link>
                   <div className="flex items-center text-sm text-gray-500">
                     <svg className="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />

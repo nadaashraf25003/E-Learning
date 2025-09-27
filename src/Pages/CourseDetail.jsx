@@ -2,7 +2,7 @@
 
 // Assets
 import home2_1 from "./../../public/home2-1.png";
-import CourseDetailImg from "./../assets/CourseDetail.jpg";
+import CourseDetailImg from "../../public/CourseDetail.jpg";
 
 // Components
 import Card from "./../components/Card";

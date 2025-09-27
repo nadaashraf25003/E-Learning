@@ -12,11 +12,11 @@ import { category } from "../../db";
 function Courses() {
   return (
     <>
-      <div className="bg-[#49BBBD] overflow-hidden px-4 sm:px-8 lg:px-16">
+      
         <NavBar />
-      </div>
+     
       {/* Welcome back, ready for your next lesson? */}
-      <div className="bg-[#e6e4e4]  px-16 pb-16">
+      <div className="bg-white  px-16 pb-16">
         <div className="flex items-center justify-between gap-2 mb-10 pt-10">
           <h1 className="text-2xl font-bold text-center">
             Welcome back, ready for your next lesson?
@@ -157,7 +157,6 @@ function Courses() {
         </div>
       </div>
 
-      {/* Student are viewing */}
       <div className="bg-[#f3f2f2]   p-16">
         <div className="flex items-center justify-between gap-2 mb-10 pt-10">
           <h1 className="text-2xl font-bold text-center">

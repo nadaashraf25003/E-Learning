@@ -5,7 +5,7 @@ import * as yup from "yup";
 
 
 // Assets
-import login from "../assets/Logo.png";
+import login from "../../public/Logo.png";
 
 function SignUp() {
   const navigate = useNavigate();

@@ -2,7 +2,7 @@
 import NavBar from "./components/NavBar";
 
 // Assets
-import HomeImg from "./assets/Home.png";
+import HomeImg from ".././public/Home.png";
 import Home1 from "../homePages/home1";
 import Home2 from "../homePages/home2";
 import Home3 from "../homePages/home3";

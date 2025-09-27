@@ -2,7 +2,7 @@
 import { useNavigate } from "react-router-dom";
 
 //Assets
-import login from "../assets/Logo.png";
+import login from "../../public/Logo.png";
 function SignIn() {
   const navigate = useNavigate();
   const sumbit = (e) => {

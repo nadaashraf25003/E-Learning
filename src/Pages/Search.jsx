@@ -1,5 +1,5 @@
 // Assets
-import SearchImg from "./../assets/Search.jpg";
+import SearchImg from "../../public/Search.jpg";
 import Student from "./../../public/home3-6.jpg";
 import Blog5 from "./../../public/blog5.png";
 import Blog2 from "./../../public/Blog2.png";

@@ -1,5 +1,5 @@
 // Assets
-import LiteratureCourseImg from "./../assets/LiteratureCourse.jpg";
+import LiteratureCourseImg from "../../public/LiteratureCourse.jpg";
 import LiteratureCourseImg_2 from "../../public/home3-5.png";
 
 // Components
