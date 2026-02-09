@@ -42,10 +42,6 @@ let router = createBrowserRouter(
           Component: Courses,
         },
         {
-          path: "Blog",
-          Component: Blog,
-        },
-        {
           path: "CourseDetail/:id",
           Component: CourseDetail,
         },
@@ -58,7 +54,11 @@ let router = createBrowserRouter(
           Component: LiteratureCourse,
         },
         {
-          path: "BlogDetail",
+          path: "Blog",
+          Component: Blog,
+        },
+        {
+          path: "BlogDetail/:id",
           Component: BlogDetail,
         },
       ],
