@@ -3,8 +3,8 @@ import LiteratureCourseImg from "../../public/LiteratureCourse.jpg";
 import LiteratureCourseImg_2 from "../../public/home3-5.png";
 
 // Components
-import NavBar from "./../components/NavBar";
-import Footer from "./../components/Footer";
+import NavBar from "./../Components/NavBar";
+import Footer from "./../Components/Footer";
 import Card from "./../components/Card";
 import Pagination from "./../Components/ui/Pagination"; // Import Pagination component
 

@@ -8,8 +8,8 @@ import CourseDetailImg from "../../public/CourseDetail.jpg";
 
 // Components
 import Card from "./../components/Card";
-import NavBar from "./../components/NavBar";
-import Footer from "../components/Footer";
+import NavBar from "./../Components/NavBar";
+import Footer from "../Components/Footer";
 import Pagination from "../Components/ui/Pagination"; // Import Pagination
 
 // db
