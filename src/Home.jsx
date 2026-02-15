@@ -2,7 +2,7 @@
 import NavBar from "./components/NavBar";
 
 // Assets
-import HomeImg from ".././public/Home.png";
+
 import Home1 from "../homePages/home1";
 import Home2 from "../homePages/home2";
 import Home3 from "../homePages/home3";
@@ -68,7 +68,7 @@ const Home = () => {
             <div className="lg:w-1/2 relative">
               <div className="relative">
                 <img
-                  src={HomeImg}
+                  src="./Home.png"
                   alt="Student learning online"
                   className="w-full max-w-md mx-auto z-10 relative rounded-lg "
                 />

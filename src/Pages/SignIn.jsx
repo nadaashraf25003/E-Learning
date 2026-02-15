@@ -2,7 +2,7 @@
 import { useNavigate } from "react-router-dom";
 
 //Assets
-import login from "../../public/Logo.png";
+
 function SignIn() {
   const navigate = useNavigate();
   const sumbit = (e) => {
@@ -30,7 +30,7 @@ function SignIn() {
     <>
       <div className="grid grid-cols-2  mx-[10%] bg-white  max-md:grid-cols-1  justify-center items-center h-screen shadow-2xl">
         <div className="right max-md:hidden ">
-          <img src={login} alt="logo" className="rounded-lg" />
+          <img src="/Logo.png" alt="logo" className="rounded-lg" />
         </div>
         <div className="left">
           <div className="SignIn  flex flex-col justify-center max-lg:p-10  p-16 rounded-lg text-center">

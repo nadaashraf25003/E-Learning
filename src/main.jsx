@@ -18,6 +18,7 @@ import LiteratureCourse from "./Pages/Literature course.jsx";
 import CourseDetail from "./Pages/CourseDetail.jsx";
 import Blog from './Pages/Blog';
 import BlogDetail from "./Pages/BlogDetail.jsx";
+import Pricing from "./Pages/Pricing.jsx";  
 
 let router = createBrowserRouter(
   [
@@ -61,8 +62,12 @@ let router = createBrowserRouter(
           path: "BlogDetail/:id",
           Component: BlogDetail,
         },
+        { 
+          path: "Pricing",
+          Component: Pricing,
+        }
       ],
-    },
+    },  
   ]
 );
 createRoot(document.getElementById("root")).render(

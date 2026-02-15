@@ -1,5 +1,4 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import Logo2 from "../../public/UpLearn2.png";
 import { useState } from "react";
 
 const NavBar = () => {
@@ -37,7 +36,7 @@ const NavBar = () => {
     ? "bg-white text-[#49BBBD] hover:bg-gray-100" 
     : "bg-[#49BBBD] text-white hover:bg-[#3aa9ab]";
 
-  // Close mobile menu when navigating
+
   const handleNavigate = (path) => {
     navigate(path);
     setIsMenuOpen(false);
@@ -47,24 +46,24 @@ const NavBar = () => {
     <header className={`sticky top-0 z-50 w-full ${navbarClass} transition-all duration-300`}>
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo and Brand */}
+        
           <div className="flex items-center">
             <div 
               className="navbar-brand flex items-center cursor-pointer"
               onClick={() => handleNavigate("/")}
             >
               <img 
-                src={Logo2} 
+                src="./Logo.png"
                 alt="UpLearn Logo" 
                 className="h-8 w-8 sm:h-10 sm:w-10 lg:h-12 lg:w-12 object-contain"
               />
-              <span className={`ml-2 lg:ml-3 text-xl lg:text-2xl font-bold ${titleClass}`}>
+              <span className={`ml-2 lg:ml-3 text-xl lg:text-2xl font-bold text-[#49BBBD] ${titleClass}`}>
                 UpLearn
               </span>
             </div>
           </div>
 
-          {/* Desktop Navigation Links - Hidden on mobile */}
+     
           <div className="hidden lg:flex items-center space-x-1">
             <button
               onClick={() => navigate("/")}
@@ -79,10 +78,10 @@ const NavBar = () => {
               Courses
             </button>
             <button
-              onClick={() => navigate("/Careers")}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${linkClass} ${location === "/Careers" ? activeLinkClass : ""}`}
+              onClick={() => navigate("/Pricing")}
+              className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${linkClass} ${location === "/Pricing" ? activeLinkClass : ""}`}
             >
-              Careers
+              Pricing
             </button>
             <button
               onClick={() => navigate("/Blog")}
@@ -104,7 +103,7 @@ const NavBar = () => {
             </button>
           </div>
 
-          {/* Desktop Auth Buttons - Hidden on mobile */}
+         
           <div className="hidden lg:flex items-center space-x-4">
             <button
               className={`px-6 py-2 rounded-full text-sm font-medium border transition-colors duration-200 ${loginClass}`}
@@ -120,7 +119,7 @@ const NavBar = () => {
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
+        
           <div className="flex lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -132,7 +131,7 @@ const NavBar = () => {
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
-              {/* Hamburger Icon */}
+             
               {!isMenuOpen ? (
                 <svg
                   className="block h-6 w-6"
@@ -188,10 +187,10 @@ const NavBar = () => {
                 Courses
               </button>
               <button
-                onClick={() => handleNavigate("/Careers")}
-                className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${mobileLinkClass} ${location === "/Careers" ? activeLinkClass : ""}`}
+                onClick={() => handleNavigate("Pricing")}
+                className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${mobileLinkClass} ${location === "/Pricing" ? activeLinkClass : ""}`}
               >
-                Careers
+                Pricing
               </button>
               <button
                 onClick={() => handleNavigate("/Blog")}

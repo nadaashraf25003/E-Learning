@@ -3,8 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 // Assets
-import home2_1 from "./../../public/home2-1.png";
-import CourseDetailImg from "../../public/CourseDetail.jpg";
+
 
 // Components
 import Card from "./../components/Card";
