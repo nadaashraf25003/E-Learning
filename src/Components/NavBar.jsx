@@ -89,12 +89,12 @@ const NavBar = () => {
             >
               Blogs
             </button>
-            <button
+            {/* <button
               onClick={() => navigate("/About")}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${linkClass} ${location === "/About" ? activeLinkClass : ""}`}
             >
               About Us
-            </button>
+            </button> */}
             <button
               onClick={() => navigate("/LiteratureCourse")}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 ${linkClass} ${location === "/LiteratureCourse" ? activeLinkClass : ""}`}
@@ -187,7 +187,7 @@ const NavBar = () => {
                 Courses
               </button>
               <button
-                onClick={() => handleNavigate("Pricing")}
+                onClick={() => handleNavigate("/Pricing")}
                 className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${mobileLinkClass} ${location === "/Pricing" ? activeLinkClass : ""}`}
               >
                 Pricing
@@ -198,12 +198,12 @@ const NavBar = () => {
               >
                 Blogs
               </button>
-              <button
+              {/* <button
                 onClick={() => handleNavigate("/About")}
                 className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${mobileLinkClass} ${location === "/About" ? activeLinkClass : ""}`}
               >
                 About Us
-              </button>
+              </button> */}
               <button
                 onClick={() => handleNavigate("/LiteratureCourse")}
                 className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${mobileLinkClass} ${location === "/LiteratureCourse" ? activeLinkClass : ""}`}

@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 
 // Components
 import Card from "./../components/Card";
-import NavBar from "./../components/NavBar";
+import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import Pagination from "../Components/ui/Pagination"; // Import Pagination
 
@@ -96,7 +96,7 @@ function CourseDetail() {
             </span>
           </div>
           <button 
-            onClick={() => navigate("/enroll/" + course.id)}
+            onClick={() => navigate("/Checkout/" + course.id)}
             className="bg-white text-[#49BBBD] font-bold px-8 py-3 rounded-lg text-lg hover:bg-gray-100 transition-colors duration-300"
           >
             Enroll Now for {course.newPrice}
@@ -268,7 +268,7 @@ function CourseDetail() {
                   <p className="text-sm text-gray-600 mb-6">Limited time offer</p>
                   
                   <button 
-                    onClick={() => navigate("/enroll/" + course.id)}
+                    onClick={() => navigate("/Checkout/" + course.id)}
                     className="w-full bg-[#49BBBD] text-white font-bold py-3 rounded-lg text-lg hover:bg-[#3aa9ab] transition-colors duration-300 mb-4"
                   >
                     Enroll Now
@@ -399,7 +399,7 @@ function CourseDetail() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
-              onClick={() => navigate("/enroll/" + course.id)}
+              onClick={() => navigate("/Checkout/" + course.id)}
               className="bg-white text-[#49BBBD] font-bold px-8 py-3 rounded-lg text-lg hover:bg-gray-100 transition-colors duration-300"
             >
               Enroll Now for {course.newPrice}
