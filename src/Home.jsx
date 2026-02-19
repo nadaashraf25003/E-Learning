@@ -1,12 +1,12 @@
 // Components
-import NavBar from "./Components/NavBar";
+import NavBar from "./components/NavBar";
 
 // Assets
 
 import Home1 from "../homePages/home1";
 import Home2 from "../homePages/home2";
 import Home3 from "../homePages/home3";
-import Footer from "./Components/Footer";
+import Footer from "./components/Footer";
 import { useNavigate } from "react-router-dom";
 const Home = () => {
   const navigte = useNavigate();

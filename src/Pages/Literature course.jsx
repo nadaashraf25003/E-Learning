@@ -1,10 +1,10 @@
 
 
 // Components
-import NavBar from "./../Components/NavBar";
-import Footer from "./../Components/Footer";
-import Card from "./../components/Card";
-import Pagination from "./../Components/ui/Pagination"; // Import Pagination component
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
+import Card from "../components/Card";
+import Pagination from "../components/ui/Pagination"; // Import Pagination component
 
 // db
 import { literaturecourse } from "../../db";

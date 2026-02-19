@@ -6,10 +6,10 @@ import { useState, useEffect } from "react";
 
 
 // Components
-import Card from "./../components/Card";
+import Card from "../components/Card";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import Pagination from "../Components/ui/Pagination"; // Import Pagination
+import Pagination from "../components/ui/Pagination"; // Import Pagination
 
 // db
 import { getCourseById, Coursers } from "../../db";
