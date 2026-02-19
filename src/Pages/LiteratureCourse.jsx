@@ -3,11 +3,11 @@
 // Components
 import NavBar from "../components/NavBar.jsx";
 import Footer from "../components/Footer.jsx";
-import Card from "../components/Card";
-import Pagination from "../components/ui/Pagination"; // Import Pagination component
+import Card from "../components/Card.jsx";
+import Pagination from "../components/ui/Pagination.jsx"; // Import Pagination component
 
 // db
-import { literaturecourse } from "../../db";
+import { literaturecourse } from "../../db.js";
 import { useState } from "react"; // Import useState for pagination state
 
 function LiteratureCourse() {
