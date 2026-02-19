@@ -1,8 +1,8 @@
 
 
 // Components
-import NavBar from "../components/NavBar.jsx";
 import Footer from "../components/Footer.jsx";
+import NavBar from "../components/NavBar.jsx";
 import Card from "../components/Card.jsx";
 import Pagination from "../components/ui/Pagination.jsx"; // Import Pagination component
 
