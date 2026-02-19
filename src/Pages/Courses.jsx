@@ -3,8 +3,8 @@ import React, { useState, useMemo } from "react";
 
 // Components
 import Card from "../components/Card";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import NavBar from "../components/NavBar.jsx";
+import Footer from "../components/Footer.jsx";
 import Pagination from "../components/ui/Pagination";
 
 // db

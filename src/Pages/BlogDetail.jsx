@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
+import Footer from "../components/Footer.jsx";
+import NavBar from "../components/NavBar.jsx";
 import { getBlogPostById, getRelatedPosts } from "../../blog";
 
 const BlogDetail = () => {

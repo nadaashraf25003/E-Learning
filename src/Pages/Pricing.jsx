@@ -26,8 +26,8 @@ import AppleIcon from "@mui/icons-material/Apple";
 
 import { useState } from "react";
 
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import NavBar from "../components/NavBar.jsx";
+import Footer from "../components/Footer.jsx";
 import { 
   
    
