@@ -1,11 +1,6 @@
 import { useState, useEffect } from "react";
-import SearchImg from "../../public/Search.jpg";
-import Student from "./../../public/home3-6.jpg";
-import Blog5 from "./../../public/blog5.png";
-import Blog2 from "./../../public/Blog2.png";
-import Blog3 from "./../../public/blog3.png";
-import NavBar from "./../Components/NavBar";
-import Footer from "./../Components/Footer";
+import NavBar from "./../components/NavBar";
+import Footer from "./../components/Footer";
 import Card from "./../components/Card";
 import Pagination from "./../Components/ui/Pagination";
 import { Coursers, creators } from "../../db";
@@ -15,7 +10,7 @@ function Search() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredCourses, setFilteredCourses] = useState(Coursers);
   const [filteredCreators, setFilteredCreators] = useState(creators);
-  
+
   // Pagination states
   const [pagination, setPagination] = useState({
     allCourses: { currentPage: 1, itemsPerPage: 4 },
@@ -99,7 +94,7 @@ function Search() {
       <div className="relative h-[300px] flex items-center justify-center overflow-hidden max-md:h-full">
         <div
           className="head h-full bg-cover bg-center opacity-70 absolute w-full"
-          style={{ backgroundImage: `url(${SearchImg})` }}
+          style={{ backgroundImage: `url("/Search.jpg")` }}
         ></div>
         <div className="z-10 flex flex-col items-center w-full px-4 sm:px-8 lg:px-16 max-md:py-2">
           <div className="w-full max-w-4xl">
@@ -318,7 +313,7 @@ function Search() {
         </h2>
         <div className="bg-white/80 text-black p-4 sm:p-6 lg:p-10 rounded-lg grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           <div className="w-full h-64 sm:h-72 lg:h-80 rounded-lg overflow-hidden">
-            <img src={Student} alt="Student testimonial" className="w-full h-full object-cover" />
+            <img src="/home3-6.jpg" alt="Student testimonial" className="w-full h-full object-cover" />
           </div>
           <div className="flex flex-col justify-center px-0 sm:px-4 lg:px-8">
             <div className="mb-4 sm:mb-5">
@@ -359,9 +354,9 @@ function Search() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {[
-            { id: 1, image: Blog2, discount: "50%", title: "Web Development Mastery", description: "Complete web development course with hands-on projects" },
-            { id: 2, image: Blog3, discount: "10%", title: "Data Science Fundamentals", description: "Learn data analysis and machine learning from scratch" },
-            { id: 3, image: Blog5, discount: "50%", title: "UI/UX Design Bootcamp", description: "Master user interface and experience design principles" }
+            { id: 1, image: "./blog4.png", discount: "50%", title: "Web Development Mastery", description: "Complete web development course with hands-on projects" },
+            { id: 2, image: "./blog3.png", discount: "10%", title: "Data Science Fundamentals", description: "Learn data analysis and machine learning from scratch" },
+            { id: 3, image: "./blog5.png", discount: "50%", title: "UI/UX Design Bootcamp", description: "Master user interface and experience design principles" }
           ].map((offer) => (
             <div key={offer.id} className="relative bg-black rounded-2xl overflow-hidden group hover:scale-[1.02] transition-transform duration-300">
               <div

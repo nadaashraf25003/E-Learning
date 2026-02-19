@@ -1,6 +1,4 @@
-// Assets
-import LiteratureCourseImg from "../../public/LiteratureCourse.jpg";
-import LiteratureCourseImg_2 from "../../public/home3-5.png";
+
 
 // Components
 import NavBar from "./../Components/NavBar";
@@ -43,12 +41,12 @@ function LiteratureCourse() {
       <div className="relative h-[300px] flex items-center justify-center overflow-hidden max-md:h-full">
         <div
           className="head h-full bg-cover bg-center opacity-70 absolute w-full"
-          style={{ backgroundImage: `url(${LiteratureCourseImg})` }}
+          style={{ backgroundImage: `url("/LiteratureCourse.jpg")` }}
         ></div>
         <div className="z-10 flex max-md:flex-col items-center justify-between w-full px-15">
           <div className="w-65 h-65 bg-black border-5 border-[#49BBBD] rounded-full overflow-hidden mr-5 max-md:mb-5">
             <img
-              src={LiteratureCourseImg_2}
+              src="/home3-5.png"
               alt=""
               className="w-full h-full object-cover"
             />
