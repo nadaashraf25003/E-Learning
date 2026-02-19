@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import NavBar from "../components/NavBar.jsx";
 import Footer from "../components/Footer.jsx";
+import NavBar from "../components/NavBar.jsx";
 import Card from "../components/Card";
 import Pagination from "../components/ui/Pagination";
 import { Coursers, creators } from "../../db";
