@@ -6,9 +6,9 @@ import { useState, useEffect } from "react";
 
 
 // Components
-import Card from "../components/Card";
 import Footer from "../components/Footer.jsx";
 import NavBar from "../components/NavBar.jsx";
+import Card from "../components/Card.jsx";
 import Pagination from "../components/ui/Pagination"; // Import Pagination
 
 // db
